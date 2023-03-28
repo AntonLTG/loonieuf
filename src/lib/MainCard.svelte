@@ -1,6 +1,4 @@
-<script>
-  
-</script>
+<script></script>
 
 <div class="mainCard">
     <div class="Title">
@@ -24,7 +22,8 @@
     width: 80vw;
     display: flex;
     flex-direction: column;
-    border-radius: 8vh;
+    border-bottom-left-radius: 8vh;
+    border-bottom-right-radius: 8vh;
     background-color: white;
 }
 
