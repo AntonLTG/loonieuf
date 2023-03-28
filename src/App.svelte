@@ -9,9 +9,7 @@
 </svelte:head>
 
 <main>
-  <div id="sticky-navbar">
-    <Navbar />
-  </div>
+  <Navbar />
   <MainCard />
 </main>
 
@@ -21,10 +19,5 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-  }
-  #sticky-navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
   }
 </style>

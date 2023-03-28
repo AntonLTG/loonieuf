@@ -1,35 +1,35 @@
 <script lang="ts">
   import blankethoodiegirl from "./../assets/img/blankethoodie.png";
-  import FiArrowLeft from "svelte-icons-pack/fi/FiArrowLeft";
-  import FiArrowRight from "svelte-icons-pack/fi/FiArrowRight";
-  import Icon from "svelte-icons-pack/Icon.svelte";
+  import Logo from "./../assets/img/Logo-loonieshop.png";
 
-  import { Carousel, CarouselTransition } from "flowbite-svelte";
+  import { CarouselTransition } from "flowbite-svelte";
   // ./imageData/+server.js has the following
   export const images = [
     {
       id: 0,
       name: "Cosmic timetraveler",
       imgurl: blankethoodiegirl,
-      attribution: "cosmic-timetraveler-pYyOZ8q7AII-unsplash.com",
+    },
+    {
+      id: 1,
+      name: "Cosmic timetraveler",
+      imgurl: Logo,
     },
   ];
 </script>
 
-<Carousel {images} />
-
 <div class="mainCard">
   <div class="vRuta">
     <div class="Title">Loonie Hoodie</div>
-    <div class="arrow-container">
-      <div class="left-arrow">
-        <Icon size="2rem" color="black" src={FiArrowLeft} />
-      </div>
-      <div class="right-arrow">
-        <Icon size="2rem" color="black" src={FiArrowRight} />
-      </div>
+    <div>
+      <CarouselTransition
+        {images}
+        transitionType="fly"
+        transitionParams={{ delay: 250, duration: 300 }}
+        showCaptions={false}
+        showThumbs={false}
+      />
     </div>
-    <div><img src={blankethoodiegirl} alt="fuckshitup" /></div>
   </div>
   <div class="hRuta">
     <div class="description-title">Beskrivning</div>
@@ -67,12 +67,9 @@
 
   .mainCard {
     width: 80vw;
-    border-bottom-left-radius: 8vh;
-    border-bottom-right-radius: 8vh;
     background-color: white;
     padding: 3rem;
     height: 90%;
-    border: 1px red solid;
     gap: 3rem;
   }
 
