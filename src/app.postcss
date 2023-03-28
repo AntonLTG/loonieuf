@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Noto+Sans+JP&family=Noto+Sans+TC&family=Oswald:wght@300&family=Stylish&display=swap');
+/* Write your global styles here, in PostCSS syntax */
+
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Noto+Sans+JP&family=Noto+Sans+TC&family=Oswald:wght@300&family=Stylish&display=swap");
+
+@tailwind base;
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #F9F5FF;
+  background: #f9f5ff;
 }
 
 * {
@@ -12,7 +16,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 /* ___________COOLORS____________ */
 
@@ -22,43 +25,41 @@ body {
 }
 
 .whitemintcream {
-  color: #EFF6EE;
-  background: #EFF6EE;
+  color: #eff6ee;
+  background: #eff6ee;
 }
 
 .magnolia {
-  color: #F9F5FF;
-  background: #F9F5FF;
+  color: #f9f5ff;
+  background: #f9f5ff;
 }
 
 .lightpink {
-  color: #D4C2FC;
-  background: #D4C2FC;
+  color: #d4c2fc;
+  background: #d4c2fc;
 }
 
 .darkblue {
-  color: #1D3461;
-  background: #1D3461;
+  color: #1d3461;
+  background: #1d3461;
 }
 
 .blue {
-  color: #1F487E;
-  background: #1F487E;
+  color: #1f487e;
+  background: #1f487e;
 }
 
 .lighterblue {
-  color: #247BA0;
-  background: #247BA0;
+  color: #247ba0;
+  background: #247ba0;
 }
 
 .darkgruemetal {
-  color: #1F363D;
-  background: #1F363D;
+  color: #1f363d;
+  background: #1f363d;
 }
 
-
 /* ______________Fonts_____________ */
-
 
 /*
 font-family: 'Delicious Handrawn', cursive;
@@ -68,3 +69,7 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Stylish', sans-serif;
 
 */
+
+@tailwind components;
+
+@tailwind utilities;
