@@ -7,7 +7,7 @@
             <img src="assets\img\blankethoodie.png" alt="fuckshitup">
         </div>
         <div class="hRuta">
-            a
+            a asdas hej anton
         </div>
     </div>
     
