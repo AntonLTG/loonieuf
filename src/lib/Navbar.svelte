@@ -1,18 +1,15 @@
 <script lang="ts">
   import AiOutlineShopping from "svelte-icons-pack/ai/AiOutlineShopping";
-  import Icon from 'svelte-icons-pack/Icon.svelte';
-
+  import Icon from "svelte-icons-pack/Icon.svelte";
+  import Logo from "./../assets/img/Logo-loonieshop.png";
 </script>
 
 <div class="main">
   <div class="content-container">
-    <img
-      class="logo-img"
-      src="assets\img\Logo-loonieshop.png"
-      alt="LoonieUFlogo"
-    />
+    <img class="logo-img" src={Logo} alt="LoonieUFlogo" />
     <div class="titel">Loonie UF</div>
-    <div class="shopping-bag"><Icon size="2rem" color="#EFF6EE" src={AiOutlineShopping} />
+    <div class="shopping-bag">
+      <Icon size="2rem" color="#EFF6EE" src={AiOutlineShopping} />
     </div>
   </div>
 </div>
@@ -28,25 +25,27 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
-    }
-  
+    width: 80vw;
+    margin: auto;
+  }
+
   .logo-img {
     width: 3rem;
-    margin-left: 12rem;
   }
-  
-  .logo-img:hover{
+
+  .logo-img:hover {
     cursor: pointer;
+
     opacity: 80%;
   }
 
-  .shopping-bag{
-    margin-right: 12rem;
+  .shopping-bag {
     border-radius: 2rem;
     padding: 0.2rem;
+    transition: 800ms;
   }
-  .shopping-bag:hover{
-    background-color: #D4C2FC;
+  .shopping-bag:hover {
+    background-color: #d4c2fc;
     cursor: pointer;
     scale: 110%;
     transition: 500ms;
@@ -55,12 +54,12 @@
   .titel {
     font-family: "Stylish", sans-serif;
     font-size: 3rem;
-    color: #D4C2FC;
+    color: #d4c2fc;
     font-weight: bold;
   }
 
-  .titel:hover{
+  .titel:hover {
     cursor: pointer;
-    opacity: 80%;  }
-
+    opacity: 80%;
+  }
 </style>
