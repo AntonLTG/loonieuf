@@ -4,18 +4,26 @@
   import Logo from "./../assets/img/Logo-loonieshop.png";
 </script>
 
-<div class="main">
-  <div class="content-container">
-    <img class="logo-img" src={Logo} alt="LoonieUFlogo" />
-    <div class="titel">Loonie UF</div>
-    <div class="shopping-bag">
-      <Icon size="2rem" color="#EFF6EE" src={AiOutlineShopping} />
+<div id="sticky-navbar">
+  <div class="navbar">
+    <div class="content-container">
+      <img class="logo-img" src={Logo} alt="LoonieUFlogo" />
+      <div class="titel">Loonie UF</div>
+      <div class="shopping-bag">
+        <Icon size="2rem" color="#EFF6EE" src={AiOutlineShopping} />
+      </div>
     </div>
   </div>
 </div>
 
 <style>
-  .main {
+  #sticky-navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .navbar {
     background: #1f487e;
     width: 100vw;
   }
