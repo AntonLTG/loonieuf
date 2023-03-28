@@ -1,9 +1,11 @@
 <script lang="ts">
     import MainCard from "./lib/MainCard.svelte";
+    import Navbar from "./lib/Navbar.svelte";
 </script>
 
 <main>
-<MainCard/>
+  <Navbar/>
+  <MainCard/>
 
 </main>
 

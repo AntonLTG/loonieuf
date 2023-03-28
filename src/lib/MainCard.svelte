@@ -1,3 +1,7 @@
+<script>
+  
+</script>
+
 <div class="mainCard">
     <div class="Title">
         Loonie Hoodie
@@ -7,6 +11,7 @@
             <img src="assets\img\blankethoodie.png" alt="fuckshitup">
         </div>
         <div class="hRuta">
+          <div>titel</div>
             a asdas hej anton
         </div>
     </div>
