@@ -1,16 +1,14 @@
 <script></script>
 
 <div class="mainCard">
-    <div class="Title">
-        Loonie Hoodie
-    </div>
     <div class="mainRuta">
         <div class="vRuta">
             <img src="assets\img\blankethoodie.png" alt="fuckshitup">
         </div>
         <div class="hRuta">
-          <div>titel</div>
-            a asdas hej anton
+          <div class="Title">  
+            Loonie Hoodie
+          </div>
         </div>
     </div>
     
@@ -28,6 +26,7 @@
 }
 
 .mainRuta{
+  margin-top: 3rem;
     display: flex;
     flex-direction: row;
     height: 90%;
@@ -37,7 +36,9 @@
     display: flex;
     justify-content: center;
     height: 10%;
-    font-size: 8vh;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 .Rutor{
