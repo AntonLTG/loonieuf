@@ -69,8 +69,7 @@
     width: 80vw;
     background-color: white;
     padding: 3rem;
-    height: 90%;
-    gap: 3rem;
+    gap: 5rem;
   }
 
   .Title {
@@ -112,8 +111,7 @@
     margin-top: 10vh;
   }
 
-  .description {
-  }
+
 
   .buy-button-container {
     display: flex;
@@ -147,54 +145,12 @@
   .vRuta {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
 
-  .vRuta img {
-    height: auto;
-    width: 100%;
-    object-fit: cover;
-  }
 
-  .left-arrow {
-    position: absolute;
-    margin-right: 20vw;
-    margin-top: 60vh;
-    width: 2rem;
-    height: 2rem;
-    color: #ffff;
-    border-radius: 10px;
-  }
-  .left-arrow:hover {
-    opacity: 80%;
-    cursor: pointer;
-    scale: 115%;
-    transition: 500ms;
-    background: grey;
-  }
-
-  .right-arrow {
-    position: absolute;
-    margin-left: 20vw;
-    margin-top: 59.5vh;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 10px;
-  }
-  .right-arrow:hover {
-    opacity: 80%;
-    cursor: pointer;
-    scale: 115%;
-    transition: 500ms;
-    background: grey;
-  }
-
-  .arrow-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  
+  
 
   /*{
     border-style: solid;

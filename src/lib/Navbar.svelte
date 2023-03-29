@@ -22,11 +22,12 @@
     top: 0;
     width: 100%;
     z-index: 100;
+    
   }
   .navbar {
     background: #1f487e;
     width: 100vw;
-  }
+    }
 
   .content-container {
     display: flex;
