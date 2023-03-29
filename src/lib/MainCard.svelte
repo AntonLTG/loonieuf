@@ -51,7 +51,7 @@
     <div class="pris">Pris: 400 Kr</div>
     <div class="storlek">Storlek: One Size</div>
     <div>Oversized design</div>
-    <div class="storlek">Välj storlek</div>
+    <div class="storlek">Välj Antal</div>
     <div class="buy-button-container">
       <div class="buy-button">Köp</div>
     </div>
