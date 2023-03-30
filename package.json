@@ -29,6 +29,7 @@
     "flowbite": "^1.6.4",
     "flowbite-svelte": "^0.34.2",
     "siema": "^1.5.1",
-    "svelte-icons-pack": "^2.1.0"
+    "svelte-icons-pack": "^2.1.0",
+    "svelte-navigator": "^3.2.2"
   }
 }

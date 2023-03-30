@@ -6,7 +6,6 @@
 
 
 <main>
-  <Navbar />
   <MainCard />
 </main>
 

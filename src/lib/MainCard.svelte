@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { Router, Link, Route } from "svelte-navigator";
   import blankethoodiegirl from "./../assets/img/blankethoodie.png";
   import Logo from "./../assets/img/Logo-loonieshop.png";
 
@@ -53,7 +54,9 @@
     <div>Oversized design</div>
     <div class="storlek">Välj Antal</div>
     <div class="buy-button-container">
+      <Link to="/checkout">
       <div class="buy-button">Köp</div>
+      </Link>
     </div>
   </div>
 </div>

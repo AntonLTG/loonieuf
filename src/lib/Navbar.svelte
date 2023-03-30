@@ -1,5 +1,6 @@
 <script lang="ts">
   import AiOutlineShopping from "svelte-icons-pack/ai/AiOutlineShopping";
+  import { Router, Link, Route } from "svelte-navigator";
   import Icon from "svelte-icons-pack/Icon.svelte";
   import Logo from "./../assets/img/Logo-loonieshop.png";
 </script>
@@ -7,10 +8,17 @@
 <div id="sticky-navbar">
   <div class="navbar">
     <div class="content-container">
-      <img class="logo-img" src={Logo} alt="LoonieUFlogo" />
-      <div class="titel">Loonie UF</div>
+      <Link to="/">
+        <img class="logo-img" src={Logo} alt="LoonieUFlogo" />
+      </Link>
+      <Link to="/">
+        <div class="titel">Loonie UF</div>
+    </Link>
+
       <div class="shopping-bag">
-        <Icon size="2rem" color="#EFF6EE" src={AiOutlineShopping} />
+        <Link to="/checkout">
+          <Icon size="2rem" color="#EFF6EE" src={AiOutlineShopping} />
+        </Link>
       </div>
     </div>
   </div>
