@@ -52,11 +52,10 @@
     <div class="pris">Pris: 400 Kr</div>
     <div class="storlek">Storlek: One Size</div>
     <div>Oversized design</div>
-    <div class="storlek">Välj Antal</div>
     <div class="buy-button-container">
-      <Link to="/checkout">
-      <div class="buy-button">Köp</div>
-      </Link>
+      <a href="https://buy.stripe.com/5kA8zy6kN4uJcBG001"
+        ><div class="buy-button">Beställ nu</div></a
+      >
     </div>
   </div>
 </div>
@@ -114,8 +113,6 @@
     margin-top: 10vh;
   }
 
-
-
   .buy-button-container {
     display: flex;
     justify-content: center;
@@ -126,7 +123,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
     width: 15rem;
     background: #1d3461;
     border-radius: 20px;
@@ -134,6 +131,7 @@
     transition: 1000ms;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
+    font-size: 1.7rem;
   }
 
   .buy-button:hover {
@@ -150,10 +148,6 @@
     justify-content: center;
     flex-direction: column;
   }
-
-
-  
-  
 
   /*{
     border-style: solid;

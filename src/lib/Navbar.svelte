@@ -13,13 +13,9 @@
       </Link>
       <Link to="/">
         <div class="titel">Loonie UF</div>
-    </Link>
+      </Link>
 
-      <div class="shopping-bag">
-        <Link to="/checkout">
-          <Icon size="2rem" color="#EFF6EE" src={AiOutlineShopping} />
-        </Link>
-      </div>
+      <div class="shopping-bag" />
     </div>
   </div>
 </div>
@@ -30,12 +26,11 @@
     top: 0;
     width: 100%;
     z-index: 100;
-    
   }
   .navbar {
     background: #1f487e;
     width: 100vw;
-    }
+  }
 
   .content-container {
     display: flex;
