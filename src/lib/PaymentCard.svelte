@@ -1,9 +1,18 @@
 <script></script>
 
 <div class="mainCard">
-  
-</div>
+    <div>
+      Storlek
+    </div>
+    <div>
+      Address
+    </div>
+    <div>Leverans: Gratis</div>
 
+  </div>
+
+
+  
 <style>
     @media screen and (min-width: 850px) {
     .mainCard {
