@@ -3,8 +3,8 @@
   import Page2 from "./lib/Page2.svelte"
   import Logo from "./assets/img/Logo-loonieshop.png"
   import { Router, Link, Route } from "svelte-navigator";
-    import Navbar from "./lib/Navbar.svelte";
-
+  import Navbar from "./lib/Navbar.svelte";
+  import Footer from "./lib/Footer.svelte"
 
   </script>  
 
@@ -35,6 +35,7 @@
       </Route>
     </div>
   </Router>
+  <Footer/>
 </main>
 
 <style>
