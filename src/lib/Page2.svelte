@@ -1,13 +1,8 @@
 <script lang="ts">
   import Navbar from "./Navbar.svelte";
-  import PaymentCard from "./PaymentCard.svelte";
 </script>
 
-
-
-<main>
-  <PaymentCard/>
-</main>
+<main />
 
 <style>
   main {
