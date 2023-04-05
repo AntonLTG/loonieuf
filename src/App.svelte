@@ -18,7 +18,7 @@
 <main>
   <Router>
       <Navbar/>
-    <div>
+    <div class="content">
       <Route path="/">
         <Page1 />
       </Route>
@@ -30,9 +30,11 @@
       <Route path="/om-oss">
         <Page3 />
       </Route>
+      
       <Route path="/privacy">
         <Page4/>
       </Route>
+      
       <Route path="/terms">
         <Page5 />
       </Route>
@@ -42,5 +44,8 @@
 </main>
 
 <style>
-
+  .content{
+    display: flex;
+    justify-content: center;
+  }
 </style>

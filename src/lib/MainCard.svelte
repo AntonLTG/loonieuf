@@ -21,7 +21,7 @@
 
 <div class="mainCard">
   <div class="vRuta">
-    <div>
+    <div class="laCarousel">
       <CarouselTransition
         {images}
         transitionType="fly"
@@ -57,6 +57,10 @@
   @media screen and (min-width: 850px) {
     .mainCard {
       display: flex;
+      padding-top: 20vh;
+    }
+    .Title {
+      border-top: 0px #EEEEEE solid;
     }
   }
 
@@ -76,7 +80,9 @@
     font-size: 3rem;
     font-family: "Oswald", sans-serif;
     margin-bottom: 2rem;
-    margin-top: 10vh;
+    margin-top: 9vh;
+    border-bottom: 1px #EEEEEE solid;
+    border-top: 1px #EEEEEE solid;
   }
 
   .pris {
@@ -91,7 +97,10 @@
     font-size: 1.4rem;
   }
 
-
+  .laCarousel{
+    border-bottom: 1px #EEEEEE solid;
+    padding-bottom: 2vh;
+  }
   .vRuta,
   .hRuta {
     flex: 1;
