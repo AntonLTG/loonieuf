@@ -1,9 +1,9 @@
 <script lang="ts">
-  import MainCard from "./MainCard.svelte";
+  import Terms from "./Terms.svelte";
 </script>
 
 <main>
-  <MainCard />
+  <Terms/>
 </main>
 
 <style>

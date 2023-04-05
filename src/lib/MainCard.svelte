@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { Router, Link, Route } from "svelte-navigator";
   import blankethoodiegirl from "./../assets/img/blankethoodie.png";
   import Logo from "./../assets/img/Logo-loonieshop.png";
+  import { Button, Dropdown, DropdownItem, Chevron } from 'flowbite-svelte'
 
   import { CarouselTransition } from "flowbite-svelte";
   // ./imageData/+server.js has the following
@@ -21,7 +21,6 @@
 
 <div class="mainCard">
   <div class="vRuta">
-    <div class="Title">Loonie Hoodie</div>
     <div>
       <CarouselTransition
         {images}
@@ -33,17 +32,24 @@
     </div>
   </div>
   <div class="hRuta">
+    <div class="Title">Loonie Hoodie</div>
+    <div class="pris">Pris: 399 Kr</div>
+    <div class="storlek">Storlek: One Size</div>
+    <div class="pris">
+      <Button><Chevron>Färg</Chevron></Button>
+      <Dropdown >
+        <DropdownItem>Grå</DropdownItem>
+      </Dropdown>
+    </div>
+    <div class="buy-button-container">
+      <a href="https://buy.stripe.com/5kA8zy6kN4uJcBG001"
+      ><div class="buy-button">Beställ nu</div></a
+      >
+    </div>
     <div class="description-title">Beskrivning</div>
     <div class="description">
       Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
       </div>
-      <div class="pris">Pris: 399 Kr</div>
-    <div class="storlek">Storlek: One Size</div>
-      <div class="buy-button-container">
-      <a href="https://buy.stripe.com/5kA8zy6kN4uJcBG001"
-        ><div class="buy-button">Beställ nu</div></a
-      >
-    </div>
   </div>
 </div>
 
@@ -59,6 +65,7 @@
     background-color: white;
     padding: 3rem;
     padding-top: 0rem;
+    padding-bottom:10rem;
     gap: 5rem;
   }
 
@@ -69,6 +76,7 @@
     font-size: 3rem;
     font-family: "Oswald", sans-serif;
     margin-bottom: 2rem;
+    margin-top: 10vh;
   }
 
   .pris {
@@ -82,6 +90,7 @@
     font-weight: bold;
     font-size: 1.4rem;
   }
+
 
   .vRuta,
   .hRuta {
@@ -99,13 +108,20 @@
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     font-size: 1.4rem;
-    margin-top: 10vh;
+    margin-top: 1vh;
+  }
+  .description{
+    padding-bottom: 1rem;
+    border-bottom: 1px #EEEEEE solid;
+
   }
 
   .buy-button-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px #EEEEEE solid;
+    padding-bottom: 1rem;
   }
 
   .buy-button {

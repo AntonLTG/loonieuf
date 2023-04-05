@@ -1,7 +1,5 @@
 <script lang="ts">
-  import AiOutlineShopping from "svelte-icons-pack/ai/AiOutlineShopping";
   import { Router, Link, Route } from "svelte-navigator";
-  import Icon from "svelte-icons-pack/Icon.svelte";
   import Logo from "./../assets/img/Logo-loonieshop.png";
 </script>
 

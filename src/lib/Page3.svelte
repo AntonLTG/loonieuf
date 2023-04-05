@@ -1,10 +1,9 @@
 <script lang="ts">
-  import MainCard from "./MainCard.svelte";
+  import Omoss from "./Omoss.svelte";
 </script>
 
-<main>
-  <MainCard />
-</main>
+<main />
+<Omoss/>
 
 <style>
   main {

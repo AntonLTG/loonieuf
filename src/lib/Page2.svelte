@@ -1,8 +1,11 @@
 <script lang="ts">
-  import Navbar from "./Navbar.svelte";
+  import Betalningsmetoder from "./Betalningsmetoder.svelte";
 </script>
 
-<main />
+<main>
+  <Betalningsmetoder/>
+</main> 
+
 
 <style>
   main {

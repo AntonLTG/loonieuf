@@ -1,9 +1,9 @@
 <script lang="ts">
-  import MainCard from "./MainCard.svelte";
+  import Privacy from "./Privacy.svelte";
 </script>
 
 <main>
-  <MainCard />
+  <Privacy/>
 </main>
 
 <style>
