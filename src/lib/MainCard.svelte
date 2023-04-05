@@ -1,34 +1,24 @@
 <script lang="ts">
-  import blankethoodiegirl from "./../assets/img/blankethoodie.png";
-  import Logo from "./../assets/img/Logo-loonieshop.png";
-  import { Button, Dropdown, DropdownItem, Chevron } from 'flowbite-svelte'
+  import { Button, Dropdown, DropdownItem, Chevron } from "flowbite-svelte";
 
-  import { CarouselTransition } from "flowbite-svelte";
   // ./imageData/+server.js has the following
-  export const images = [
-    {
-      id: 0,
-      name: "Cosmic timetraveler",
-      imgurl: blankethoodiegirl,
-    },
-    {
-      id: 1,
-      name: "Cosmic timetraveler",
-      imgurl: Logo,
-    },
-  ];
+
+  import CustomCarousel from "./PhotoCollection/CustomCarousel.svelte";
+  import type { ColorTypes } from "./PhotoCollection/types";
+
+  let dropdownOpen = false;
+  let currentColor: ColorTypes = "Ljusgrå";
+
+  const changeColor = (color: ColorTypes) => {
+    dropdownOpen = false;
+    currentColor = color;
+  };
 </script>
 
 <div class="mainCard">
   <div class="vRuta">
     <div class="laCarousel">
-      <CarouselTransition
-        {images}
-        transitionType="fly"
-        transitionParams={{ delay: 250, duration: 300 }}
-        showCaptions={false}
-        showThumbs={false}
-      />
+      <CustomCarousel picColor={currentColor} />
     </div>
   </div>
   <div class="hRuta">
@@ -36,20 +26,30 @@
     <div class="pris">Pris: 399 Kr</div>
     <div class="storlek">Storlek: One Size</div>
     <div class="pris">
-      <Button><Chevron>Färg</Chevron></Button>
-      <Dropdown >
-        <DropdownItem>Grå</DropdownItem>
+      <Button color="light">
+        <Chevron>{currentColor}</Chevron>
+      </Button>
+      <Dropdown bind:open={dropdownOpen}>
+        <DropdownItem on:click={() => changeColor("Ljusgrå")}>Ljusgrå</DropdownItem>
+        <DropdownItem on:click={() => changeColor("Mörkgrå")}>Mörkgrå</DropdownItem>
+        <DropdownItem on:click={() => changeColor("Marin blå")}>Marin blå</DropdownItem>
+        <DropdownItem on:click={() => changeColor("Bebis rosa")}>Bebis rosa</DropdownItem>
       </Dropdown>
     </div>
     <div class="buy-button-container">
-      <a href="https://buy.stripe.com/5kA8zy6kN4uJcBG001"
-      ><div class="buy-button">Beställ nu</div></a
-      >
+      <a target="_blank" href="https://buy.stripe.com/5kA8zy6kN4uJcBG001">
+        <div class="buy-button">Beställ nu</div>
+      </a>
     </div>
     <div class="description-title">Beskrivning</div>
     <div class="description">
-      Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-      </div>
+      Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem
+      ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
+      dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit
+      ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem
+      ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
+      dolor sit ametLorem ipsum dolor sit amet
+    </div>
   </div>
 </div>
 
@@ -60,7 +60,7 @@
       padding-top: 20vh;
     }
     .Title {
-      border-top: 0px #EEEEEE solid;
+      border-top: 0px #eeeeee solid;
     }
   }
 
@@ -69,7 +69,7 @@
     background-color: white;
     padding: 3rem;
     padding-top: 0rem;
-    padding-bottom:10rem;
+    padding-bottom: 10rem;
     gap: 5rem;
   }
 
@@ -81,8 +81,8 @@
     font-family: "Oswald", sans-serif;
     margin-bottom: 2rem;
     margin-top: 9vh;
-    border-bottom: 1px #EEEEEE solid;
-    border-top: 1px #EEEEEE solid;
+    border-bottom: 1px #eeeeee solid;
+    border-top: 1px #eeeeee solid;
   }
 
   .pris {
@@ -97,8 +97,8 @@
     font-size: 1.4rem;
   }
 
-  .laCarousel{
-    border-bottom: 1px #EEEEEE solid;
+  .laCarousel {
+    border-bottom: 1px #eeeeee solid;
     padding-bottom: 2vh;
   }
   .vRuta,
@@ -119,17 +119,15 @@
     font-size: 1.4rem;
     margin-top: 1vh;
   }
-  .description{
+  .description {
     padding-bottom: 1rem;
-    border-bottom: 1px #EEEEEE solid;
-
+    border-bottom: 1px #eeeeee solid;
   }
 
   .buy-button-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-bottom: 1px #EEEEEE solid;
+    border-bottom: 1px #eeeeee solid;
     padding-bottom: 1rem;
   }
 
@@ -137,15 +135,15 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 1rem;
-    width: 15rem;
+    padding: 0.5rem;
+    width: 10rem;
     background: #1d3461;
-    border-radius: 20px;
+    border-radius: 7px;
     color: #ffff;
     transition: 1000ms;
-    font-family: "Oswald", sans-serif;
-    font-weight: bold;
-    font-size: 1.7rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
   }
 
   .buy-button:hover {
