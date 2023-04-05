@@ -179,7 +179,7 @@
   .container {
     width: 50%;
   }
-  .asd {
-    height: 100%;
+  .asd img {
+    height: 100px;
   }
 </style>
