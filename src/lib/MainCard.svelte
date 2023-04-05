@@ -35,24 +35,11 @@
   <div class="hRuta">
     <div class="description-title">Beskrivning</div>
     <div class="description">
-      Denna unika hoodie är inte bara en vanlig tröja, det är också en filt
-      gjord av det mjukaste och mest isolerande materialet. Den kommer hålla dig
-      varm och skön hela säsongen. Men det är inte allt - den har en huva och
-      gosiga fickor så du kan krypa ihop och hålla händerna varma också. Perfekt
-      för lata dagar hemma, lägereldar, camping och mer. Vår Blanket Hoodie är
-      det perfekta valet för dig som söker ett extra tillskott av mys i
-      vardagen. Oavsett om du vill ta det lugnt med en bra bok, titta på en film
-      eller bara behöver ett extra lager på en kall dag, kommer vår hoodie ge
-      dig ultimat komfort och värme. Dessutom kommer du se snygg ut medan du
-      känner dig skön. Så varför vänta? Beställ din Big Cozy Blanket Hoodie idag
-      och upplev skillnaden själv. Varför nöja dig med att bara vara varm när du
-      kan vara varm, mysig och snygg på samma gång? Beställ nu och kryp in i det
-      ultimata myskapet!"
-    </div>
-    <div class="pris">Pris: 400 Kr</div>
+      Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+      </div>
+      <div class="pris">Pris: 399 Kr</div>
     <div class="storlek">Storlek: One Size</div>
-    <div>Oversized design</div>
-    <div class="buy-button-container">
+      <div class="buy-button-container">
       <a href="https://buy.stripe.com/5kA8zy6kN4uJcBG001"
         ><div class="buy-button">Beställ nu</div></a
       >
@@ -71,6 +58,7 @@
     width: 80vw;
     background-color: white;
     padding: 3rem;
+    padding-top: 0rem;
     gap: 5rem;
   }
 
@@ -80,6 +68,7 @@
     height: 10%;
     font-size: 3rem;
     font-family: "Oswald", sans-serif;
+    margin-bottom: 2rem;
   }
 
   .pris {
