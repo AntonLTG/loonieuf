@@ -1,27 +1,27 @@
 <script lang="ts">
-  import darkgrey1 from "./../../assets/img/darkgrey1.jpg";
-  import darkgrey2 from "./../../assets/img/darkgrey2.jpg";
-  import darkgrey3 from "./../../assets/img/darkgrey3.jpg";
-  import darkgrey4 from "./../../assets/img/darkgrey4.jpg";
-  import darkgrey5 from "./../../assets/img/darkgrey5.jpg";
+  import darkgrey1 from "./../../assets/img/darkgrey1.png";
+  import darkgrey2 from "./../../assets/img/darkgrey2.png";
+  import darkgrey3 from "./../../assets/img/darkgrey3.png";
+  import darkgrey4 from "./../../assets/img/darkgrey4.png";
+  import darkgrey5 from "./../../assets/img/darkgrey5.png";
 
-  import ljusgrå1 from "./../../assets/img/Ljusgrå1.jpg";
-  import ljusgrå2 from "./../../assets/img/Ljusgrå2.jpg";
-  import ljusgrå3 from "./../../assets/img/Ljusgrå3.jpg";
-  import ljusgrå4 from "./../../assets/img/Ljusgrå4.jpg";
-  import ljusgrå5 from "./../../assets/img/Ljusgrå5.jpg";
+  import ljusgrå1 from "./../../assets/img/Ljusgrå1.png";
+  import ljusgrå2 from "./../../assets/img/Ljusgrå2.png";
+  import ljusgrå3 from "./../../assets/img/Ljusgrå3.png";
+  import ljusgrå4 from "./../../assets/img/Ljusgrå4.png";
+  import ljusgrå5 from "./../../assets/img/Ljusgrå5.png";
 
-  import marinblue1 from "./../../assets/img/Marinblå.jpg";
-  import marinblue2 from "./../../assets/img/Marinblå1.jpg";
-  import marinblue3 from "./../../assets/img/Marinblå2.jpg";
-  import marinblue4 from "./../../assets/img/Marinblå3.jpg";
-  import marinblue5 from "./../../assets/img/Marinblå4.jpg";
+  import marinblue1 from "./../../assets/img/Marinblå.png";
+  import marinblue2 from "./../../assets/img/Marinblå1.png";
+  import marinblue3 from "./../../assets/img/Marinblå2.png";
+  import marinblue4 from "./../../assets/img/Marinblå3.png";
+  import marinblue5 from "./../../assets/img/Marinblå4.png";
 
-  import bebisrosa1 from "./../../assets/img/Bebisrosa1.jpg";
-  import bebisrosa2 from "./../../assets/img/Bebisrosa2.jpg";
-  import bebisrosa3 from "./../../assets/img/Bebisrosa3.jpg";
-  import bebisrosa4 from "./../../assets/img/Bebisrosa4.jpg";
-  import bebisrosa5 from "./../../assets/img/Bebisrosa5.jpg";
+  import bebisrosa1 from "./../../assets/img/Bebisrosa1.png";
+  import bebisrosa2 from "./../../assets/img/Bebisrosa2.png";
+  import bebisrosa3 from "./../../assets/img/Bebisrosa3.png";
+  import bebisrosa4 from "./../../assets/img/Bebisrosa4.png";
+  import bebisrosa5 from "./../../assets/img/Bebisrosa5.png";
 
   import { CarouselTransition } from "flowbite-svelte";
   import type { ColorTypes } from "./types";
@@ -160,26 +160,19 @@
 <div class="wrapper">
   <div class="container">
     <CarouselTransition
-      divClass="asd"
       images={getImages()}
-      transitionType="fly"
-      transitionParams={{ delay: 250, duration: 300 }}
+      transitionType=""
+      transitionParams={{ delay: 0, duration: 0 }}
       showCaptions={false}
       showThumbs={true}
-    />
+      slideControls={true}
+      showIndicators={true}
+      
+      />
   </div>
 </div>
 
 <style>
-  .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .container {
-    width: 50%;
-  }
-  .asd img {
-    height: 100px;
-  }
+
+
 </style>
