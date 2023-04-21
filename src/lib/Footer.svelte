@@ -90,6 +90,19 @@
             </FooterLink>
           </FooterLinkGroup>
         </div>
+        <div class="tiny-wrapper">
+          <h2
+            class="mb-6 text-sm font-semibold uppercase text-gray-200 dark:text-white"
+          >
+            Kontakta oss
+          </h2>
+          <FooterLinkGroup>
+            <div class="text"> Loonieuf@gmail.com</div>
+            <FooterLink liClass="mb-4" ref="/terms">
+              <div class="text">Terms & Conditions</div>
+            </FooterLink>
+          </FooterLinkGroup>
+        </div>
       </div>
     </div>
 

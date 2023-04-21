@@ -1,6 +1,8 @@
 <script lang="ts">
   import { Button, Dropdown, DropdownItem, Chevron } from "flowbite-svelte";
 
+  import Paymentcards from "./Paymentcards.svelte";
+
   // ./imageData/+server.js has the following
 
   import CustomCarousel from "./PhotoCollection/CustomCarousel.svelte";
@@ -30,10 +32,18 @@
         <Chevron>{currentColor}</Chevron>
       </Button>
       <Dropdown bind:open={dropdownOpen}>
-        <DropdownItem on:click={() => changeColor("Ljusgrå")}>Ljusgrå</DropdownItem>
-        <DropdownItem on:click={() => changeColor("Mörkgrå")}>Mörkgrå</DropdownItem>
-        <DropdownItem on:click={() => changeColor("Marin blå")}>Marin blå</DropdownItem>
-        <DropdownItem on:click={() => changeColor("Bebis rosa")}>Bebis rosa</DropdownItem>
+        <DropdownItem on:click={() => changeColor("Ljusgrå")}
+          >Ljusgrå</DropdownItem
+        >
+        <DropdownItem on:click={() => changeColor("Mörkgrå")}
+          >Mörkgrå</DropdownItem
+        >
+        <DropdownItem on:click={() => changeColor("Marin blå")}
+          >Marin blå</DropdownItem
+        >
+        <DropdownItem on:click={() => changeColor("Bebis rosa")}
+          >Bebis rosa</DropdownItem
+        >
       </Dropdown>
     </div>
     <div class="buy-button-container">
@@ -41,14 +51,34 @@
         <div class="buy-button">Beställ nu</div>
       </a>
     </div>
+    <div class="paymentcontainer">
+      <Paymentcards />
+    </div>
+
     <div class="description-title">Beskrivning</div>
     <div class="description">
-      Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem
-      ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
-      dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit
-      ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem
-      ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
-      dolor sit ametLorem ipsum dolor sit amet
+      Vi presenterar Loonie Hoodie: Den här snygga och bekväma hoodien är
+      tillverkad av ett mjukt, plyschigt tyg som håller dig varm och mysig även
+      under de kyligaste nätterna. Den stora fickan ger dig gott om utrymme för
+      att förvara saker som böcker, snacks eller till och med din telefon. Och
+      den klassiska designen gör att den passar för alla tillfällen, oavsett om
+      du slappar hemma eller en myskväll med vänner. Så om du letar efter ett
+      sätt att hålla dig mysig och moderiktig när du kopplar av hemma, prova
+      Blanket Hoodie idag!
+    </div>
+
+    <div class="bordercontainer">
+      <div>Storleks Guide</div>
+      <div>
+        <div>Längd: xxx</div>
+        <div>Midja: xxx</div>
+        <div>Arm: xxx</div>
+      </div>
+    </div>
+
+    <div class="bordercontainer">
+      <div>Frakt</div>
+      <div>YeS</div>
     </div>
   </div>
 </div>
@@ -120,6 +150,13 @@
     margin-top: 1vh;
   }
   .description {
+    font-family: "Noto Sans JP", sans-serif;
+
+    padding-bottom: 1rem;
+    border-bottom: 1px #eeeeee solid;
+  }
+
+  .bordercontainer {
     padding-bottom: 1rem;
     border-bottom: 1px #eeeeee solid;
   }
@@ -127,8 +164,6 @@
   .buy-button-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px #eeeeee solid;
-    padding-bottom: 1rem;
   }
 
   .buy-button {
@@ -151,6 +186,11 @@
     transition: 400ms;
     scale: 101%;
     cursor: pointer;
+  }
+
+  .paymentcontainer {
+    border-bottom: 1px #eeeeee solid;
+    padding-bottom: 1rem;
   }
 
   /* ________________________vänster ruta_____________ */

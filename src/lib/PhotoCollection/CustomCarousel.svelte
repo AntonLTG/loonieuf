@@ -167,12 +167,16 @@
       showThumbs={true}
       slideControls={true}
       showIndicators={true}
-      
+      divClass="aasdeded"
+
       />
   </div>
 </div>
 
 <style>
 
-
+.aasdeded{
+  justify-content: center;
+  align-items: center;
+}
 </style>
